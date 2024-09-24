@@ -5,7 +5,6 @@ function convertInnerTextToNumber(id) {
 
     return convertedToNumber;
 }
-
 function convertInputValueToNumber(id) {
     const fetchedData = document.getElementById(id).value;
     const convertedToNumber = parseInt(fetchedData);
@@ -23,4 +22,12 @@ function addToUpdateValue(donationTotal, donatedAmount) {
     const newDonationTotal = donationTotal + donatedAmount;
 
     return newDonationTotal;
+}
+
+// Toggling between sections
+function toggleBetweenSections(id){
+    document.getElementById('donation-section').classList.add('hidden');
+    document.getElementById('transaction-section').classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden');
 }

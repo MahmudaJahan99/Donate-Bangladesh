@@ -61,11 +61,15 @@
       <!---------- Buttons Conatiner start ---------->
       <div class="btns-container flex justify-center space-x-3 my-8">
         <button
+          id="show-donation-section"
           class="normal-btn active-btn text-xl font-semibold text-black-2"
         >
           Donation
         </button>
-        <button class="normal-btn text-xl font-semibold text-black-2">
+        <button
+          id="show-transaction-history"
+          class="normal-btn text-xl font-semibold text-black-2"
+        >
           History
         </button>
       </div>
@@ -74,7 +78,7 @@
 
     <main>
       <!-- Donation Cards -->
-      <section class="container m-auto space-y-7">
+      <section id="donation-section" class="container m-auto space-y-7">
         <!-- Card Item 1 -->
         <div
           class="card lg:card-side shadow-md md:grid md:grid-cols-2 border p-5"
@@ -249,13 +253,16 @@
           </div>
         </dialog>
       </section>
+
+      <section id="transaction-section" class="hidden">
+        <h1 class="text-2xl text-center font-bold">All of your Transactions</h1>
+      </section>
     </main>
 
-    <footer>
-
-    </footer>
+    <footer></footer>
     <!-- JavaScript files -->
     <script src="JS/utilities.js"></script>
+    <script src="JS/toggling.js"></script>
     <script src="JS/donation calculation.js"></script>
   </body>
 </html>
