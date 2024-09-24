@@ -1,7 +1,9 @@
+// Toggles to Donation
 document.getElementById('show-donation-section').addEventListener('click', function(){
-    toggleBetweenSections('donation-section');
+    toggleBetweenSections('donation-section', 'show-donation-section');
 });
 
+// Toggles to Transaction
 document.getElementById('show-transaction-history').addEventListener('click', function(){
-    toggleBetweenSections('transaction-section');
+    toggleBetweenSections('transaction-section', 'show-transaction-history');
 });

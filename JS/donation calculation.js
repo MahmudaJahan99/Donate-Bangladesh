@@ -15,6 +15,9 @@ document.getElementById('donate-for-noakhali').addEventListener('click', functio
 
         // Show the modal after successful donation
         document.getElementById('my_modal_5').showModal();
+
+        // Add to Transaction History
+        transactionHistory('noakhali-cause', userDonated);
     }
 
     else {
@@ -39,6 +42,9 @@ document.getElementById('donate-for-feni').addEventListener('click', function(ev
 
         // Show the modal after successful donation
         document.getElementById('my_modal_5').showModal();
+
+        // Add to Transaction History
+        transactionHistory('feni-cause', userDonated);
     }
 
     else {
@@ -63,6 +69,10 @@ document.getElementById('donate-for-injured').addEventListener('click', function
 
         // Show the modal after successful donation
         document.getElementById('my_modal_5').showModal();
+
+        // Add to Transaction History
+        transactionHistory('quota-cause', userDonated);
+
     }
 
     else {
