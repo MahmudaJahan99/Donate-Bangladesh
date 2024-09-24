@@ -18,6 +18,9 @@ document.getElementById('donate-for-noakhali').addEventListener('click', functio
 
         // Add to Transaction History
         transactionHistory('noakhali-cause', userDonated);
+
+        // Clearing out input field
+        document.getElementById('donate-to-noakhali').value = '';
     }
 
     else {
@@ -45,6 +48,9 @@ document.getElementById('donate-for-feni').addEventListener('click', function(ev
 
         // Add to Transaction History
         transactionHistory('feni-cause', userDonated);
+
+        // Clearing out input field
+        document.getElementById('donate-to-feni').value = '';
     }
 
     else {
@@ -73,6 +79,8 @@ document.getElementById('donate-for-injured').addEventListener('click', function
         // Add to Transaction History
         transactionHistory('quota-cause', userDonated);
 
+        // Clearing out input field
+        document.getElementById('donate-to-injured').value = '';
     }
 
     else {
