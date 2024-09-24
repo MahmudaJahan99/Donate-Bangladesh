@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lexend", sans-serif;
+}
+
+.primary-btn, .active-btn {
+    border-radius: 8px;
+    padding: 0.75rem 2rem;
+    background-color: #ABEF5F;
+}
+
+.normal-btn {
+    border-radius: 8px;
+    padding: 0.75rem 2rem;
+    border: 2px solid #F9F7F3;
+}
