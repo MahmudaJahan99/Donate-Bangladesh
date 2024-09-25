@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+
+    <!-- CSS StyleSheet -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!------------ CDNs ------------>
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "nav-bg": "#F9F7F3",
+              "green-btn": "#ABEF5F",
+              "black-1": "#111111",
+              "black-2": "#111111b3",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="backdrop-blur-md sticky top-0 z-10">
+      <!---------- Navigation Bar start ---------->
+      <nav class="bg-nav-bg opacity-80">
+        <div class="navbar container m-auto py-5">
+          <div class="navbar-start">
+            <button class="primary-btn bg-green-btn text-xl font-semibold">
+              Blog
+            </button>
+          </div>
+          <div class="navbar-center text-xl font-semibold">
+            <img class="mr-3" src="assets/logo.png" alt="Logo-image" />Donate
+            Bangladesh
+          </div>
+          <div class="navbar-end">
+            <img class="mr-3" src="assets/coin.png" alt="Coin Image" />
+            <p class="text-xl font-medium text-black-2">
+              <span id="user-total-coins">5500</span> BDT
+            </p>
+          </div>
+        </div>
+      </nav>
+      <!---------- Navigation Bar end ---------->
+    </header>
+    <main class="container m-auto">
+      <!-- Accordion Heading -->
+      <div class="flex items-center">
+        <h1 class="text-3xl font-bold">Important FAQ</h1>
+        <div class="faq-icon">
+          <img src="assets/question.gif" alt="" />
+        </div>
+      </div>
+      <!-- Accordion -->
+      <div class="join join-vertical w-full">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              Click to open this one and close others
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
