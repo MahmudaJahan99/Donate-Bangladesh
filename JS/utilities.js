@@ -1,29 +1,3 @@
-// function to fetch data and convert to integer
-function convertInnerTextToNumber(id) {
-    const fetchedData = document.getElementById(id).innerText;
-    const convertedToNumber = parseInt(fetchedData);
-
-    return convertedToNumber;
-}
-function convertInputValueToNumber(id) {
-    const fetchedData = document.getElementById(id).value;
-    const convertedToNumber = parseInt(fetchedData);
-
-    return convertedToNumber;
-}
-
-// Adding and Subtracting to update value
-function subtractToUpdateValue(userTotal, donatedAmount) {
-    const newUserTotal = userTotal - donatedAmount;
-
-    return newUserTotal;
-}
-function addToUpdateValue(donationTotal, donatedAmount) {
-    const newDonationTotal = donationTotal + donatedAmount;
-
-    return newDonationTotal;
-}
-
 // Toggling between sections
 function toggleBetweenSections(id, activeBtnColor){
     document.getElementById('donation-section').classList.add('hidden');
@@ -31,10 +5,42 @@ function toggleBetweenSections(id, activeBtnColor){
     document.getElementById('show-donation-section').classList.remove('active-btn');
     document.getElementById('show-transaction-history').classList.remove('active-btn');
     
-
     document.getElementById(activeBtnColor).classList.add('active-btn');
     document.getElementById(id).classList.remove('hidden');
-}
+};
+
+// Toggling between pages 
+document.getElementById('leads-to-home').addEventListener('click', function() {
+    window.location.href = "index.html";
+}); 
+
+// function to fetch data and convert to integer
+function convertInnerTextToNumber(id) {
+    const fetchedData = document.getElementById(id).innerText;
+    const convertedToNumber = parseInt(fetchedData);
+
+    return convertedToNumber;
+};
+function convertInputValueToNumber(id) {
+    const fetchedData = document.getElementById(id).value;
+    const convertedToNumber = parseInt(fetchedData);
+
+    return convertedToNumber;
+};
+
+
+// Adding and Subtracting to update value
+function subtractToUpdateValue(userTotal, donatedAmount) {
+    const newUserTotal = userTotal - donatedAmount;
+
+    return newUserTotal;
+};
+function addToUpdateValue(donationTotal, donatedAmount) {
+    const newDonationTotal = donationTotal + donatedAmount;
+
+    return newDonationTotal;
+};
+
 
 // Transaction History
 function transactionHistory(causeName, userDonated) {
@@ -48,4 +54,4 @@ function transactionHistory(causeName, userDonated) {
             </div>
         `
         return document.getElementById('transaction-section').appendChild(div);
-}
+};
